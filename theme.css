@@ -17,3 +17,8 @@ body {
 .theme-showcase .navbar .container {
     width: auto;
 }
+
+#dummy {
+    color: #f9b434;
+    color: #FF5000;
+}
