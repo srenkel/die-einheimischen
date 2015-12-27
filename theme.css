@@ -1,7 +1,7 @@
 body {
     padding-top: 70px;
     padding-bottom: 30px;
-    background: url('http://die-einheimischen.de/css/hintergrund.jpg');
+    background: url('./img/hintergrund.jpg');
 }
 
 .theme-dropdown .dropdown-menu {
@@ -18,7 +18,3 @@ body {
     width: auto;
 }
 
-#dummy {
-    color: #f9b434;
-    color: #FF5000;
-}
