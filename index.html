@@ -22,8 +22,7 @@
     <!-- link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet" -->
 
     <!-- Custom styles for this template -->
-    <link href="./theme.css" rel="stylesheet">
-    <link href="./sticky-footer.css" rel="stylesheet">
+    <link href="./custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -59,124 +58,33 @@
 
 </div>
 <!-- /container -->
+<div id="fb-root"></div>
 
 <footer class="footer">
     <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
+        <div class="fb-like" data-href="https://www.facebook.com/DieEinheimischen" data-layout="button_count"
+             data-action="like" data-show-faces="true" data-share="true"></div>
+
+        <div class="wp-follow"><a target="_blank"
+                                  href="https://dieeinheimischeninthailand.wordpress.com"
+                >Die
+            Einnheimischen
+            in
+            Thailand on WordPress.com</a>
+        </div>
+
+        <p class="text-muted">Email <a href="mailto:tanja.l@die-einheimischen.de">@die-einheimischen.de</a></p>
     </div>
 </footer>
 
-
 <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/docs.min.js"></script>
+<script>window.jQuery || document.write('<script src="./js/vendor/jquery.min.js"><\/script>')</script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/docs.min.js"></script>
+<script src="./js/fb.js"></script>
+<script src="./js/start.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <!-- script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
-<script type="text/javascript">
-    $(document).ready(function () {
-        animateDiv();
-        animateDiv2();
-        animateDiv3();
-
-    });
-
-    function makeNewPosition() {
-
-        // Get viewport dimensions (remove the dimension of the div)
-        var h = $(window).height() - 200;
-        var w = $(window).width() - 300;
-
-        var nh = Math.floor(Math.random() * h);
-        var nw = Math.floor(Math.random() * w);
-
-        return [nh, nw];
-
-    }
-
-    function animateDiv() {
-        var newq = makeNewPosition();
-        var oldq = $('.alien').offset();
-        var speed = calcSpeedFast([oldq.top, oldq.left], newq);
-
-        $('.alien').animate({top: newq[0], left: newq[1]}, speed, function () {
-            animateDiv();
-        });
-
-    }
-    ;
-
-    function animateDiv2() {
-        var newq = makeNewPosition();
-        var oldq = $('.alien2').offset();
-        var speed = calcSpeedMiddle([oldq.top, oldq.left], newq);
-
-        $('.alien2').animate({top: newq[0], left: newq[1]}, speed, function () {
-            animateDiv2();
-        });
-
-    }
-    ;
-
-    function animateDiv3() {
-        var newq = makeNewPosition();
-        var oldq = $('.alien3').offset();
-        var speed = calcSpeed([oldq.top, oldq.left], newq);
-
-        $('.alien3').animate({top: newq[0], left: newq[1]}, speed, function () {
-            animateDiv3();
-        });
-
-    }
-    ;
-
-    function calcSpeed(prev, next) {
-
-        var x = Math.abs(prev[1] - next[1]);
-        var y = Math.abs(prev[0] - next[0]);
-
-        var greatest = x > y ? x : y;
-
-        var speedModifier = 0.1;
-
-        var speed = Math.ceil(greatest / speedModifier);
-
-        return speed;
-
-    }
-
-    function calcSpeedFast(prev, next) {
-
-        var x = Math.abs(prev[1] - next[1]);
-        var y = Math.abs(prev[0] - next[0]);
-
-        var greatest = x > y ? x : y;
-
-        var speedModifier = 0.5;
-
-        var speed = Math.ceil(greatest / speedModifier);
-
-        return speed;
-
-    }
-
-    function calcSpeedMiddle(prev, next) {
-
-        var x = Math.abs(prev[1] - next[1]);
-        var y = Math.abs(prev[0] - next[0]);
-
-        var greatest = x > y ? x : y;
-
-        var speedModifier = 0.25;
-
-        var speed = Math.ceil(greatest / speedModifier);
-
-        return speed;
-
-    }
-</script>
 </body>
 </html>
