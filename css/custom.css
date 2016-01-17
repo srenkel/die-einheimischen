@@ -1,0 +1,153 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 70px;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    background: url('../img/hintergrund.jpg');
+}
+
+.theme-dropdown .dropdown-menu {
+    position: static;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+    margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+    width: auto;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-image: -webkit-linear-gradient(top, #f9b434 0%, #FF5000 100%);
+    background-image: -o-linear-gradient(top, #f9b434 0%, #FF5000 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f9b434), to(#FF5000));
+    background-image: linear-gradient(to bottom, #f9b434 0%, #FF5000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9b434', endColorstr='#FF5000', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+
+}
+
+.footer a {
+    color: #fff;
+}
+
+.container .text-muted {
+    margin: 20px 0;
+    color: #000;
+}
+
+.container-orange {
+    background: rgba(255, 80, 0, 0.7);
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.navbar-inverse {
+    background-image: -webkit-linear-gradient(top, #f9b434 0%, #FF5000 100%);
+    background-image: -o-linear-gradient(top, #f9b434 0%, #FF5000 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f9b434), to(#FF5000));
+    background-image: linear-gradient(to bottom, #f9b434 0%, #FF5000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9b434', endColorstr='#FF5000', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-radius: 0px;
+}
+
+.navbar-inverse {
+    border-bottom: 0px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #000;
+}
+
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+    color: #000;
+    background-color: transparent;
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #000;
+        background-color: transparent;
+    }
+    
+    .footer {
+        height: 120px;
+    }
+
+    body {
+        margin-bottom: 125px;
+    }
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel {
+    margin-bottom: 25px;
+}
+
+a {
+    color: #2A2EFD;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f9b434;
+    text-decoration: none;
+}
+
+.extra-margin-top {
+    margin-top: 25px;
+}
+
+.thumbnail {
+    background-color: transparent;
+    border: 0px;
+}
+
+.fb-like {
+    margin: 20px 10px;
+    float: right;
+}
+
+.wp-follow {
+    margin: 20px 10px;
+    float: left;
+    width: 320px;
+}
+
+#dummy {
+    color: #f9b434;
+    color: #FF5000;
+}
