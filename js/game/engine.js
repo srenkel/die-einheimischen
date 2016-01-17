@@ -97,7 +97,7 @@ var Game = new function() {
 
 
   this.setupMobile = function() {
-    var container = document.getElementById("container"),
+    var container = document.getElementById("game-container"),
         hasTouch =  !!('ontouchstart' in window),
         w = window.innerWidth, h = window.innerHeight;
       
@@ -145,7 +145,7 @@ var SpriteSheet = new function() {
     this.map = spriteData;
     this.image = new Image();
     this.image.onload = callback;
-    this.image.src = 'images/sprites.png';
+    this.image.src = '../img/game/sprites_eh.png';
   };
 
   this.draw = function(ctx,sprite,x,y,frame) {
