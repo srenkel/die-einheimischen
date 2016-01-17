@@ -39,7 +39,7 @@ var startGame = function() {
     Game.setBoard(1,new Starfield(50,0.6,100));
     Game.setBoard(2,new Starfield(100,1.0,50));
   }  
-  Game.setBoard(3,new TitleScreen("Keinheimischen Invasion",
+  Game.setBoard(3,new TitleScreen("Feindheimischen Invasion",
                                   "Klicke Angriff um das Spiel zu starten.",
                                   playGame));
 };
