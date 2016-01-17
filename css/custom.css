@@ -7,7 +7,7 @@ body {
     padding-top: 70px;
     margin-bottom: 60px;
     padding-bottom: 30px;
-    background: url('./img/hintergrund.jpg');
+    background: url('../img/hintergrund.jpg');
 }
 
 .theme-dropdown .dropdown-menu {
