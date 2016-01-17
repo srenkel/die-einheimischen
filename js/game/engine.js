@@ -117,6 +117,7 @@ var Game = new function() {
     container.style.height = h + "px";
     container.style.width = w + "px";
     container.style.padding = 0;
+    $('.navbar').hide();
 
     if(h >= this.canvas.height * 1.75 || w >= this.canvas.height * 1.75) {
       this.canvasMultiplier = 2;
@@ -172,11 +173,11 @@ var TitleScreen = function TitleScreen(title,subtitle,callback) {
   this.draw = function(ctx) {
     ctx.fillStyle = "#FFFFFF";
 
-    ctx.font = "bold 35px bangers";
+    ctx.font = "bold 25px bangers";
     var measure = ctx.measureText(title);  
     ctx.fillText(title,Game.width/2 - measure.width/2,Game.height/2);
 
-    ctx.font = "bold 20px bangers";
+    ctx.font = "bold 15px bangers";
     var measure2 = ctx.measureText(subtitle);
     ctx.fillText(subtitle,Game.width/2 - measure2.width/2,Game.height/2 + 40);
   };
