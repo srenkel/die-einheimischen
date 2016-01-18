@@ -40,7 +40,7 @@ var startGame = function() {
     Game.setBoard(2,new Starfield(100,1.0,50));
   }  
   Game.setBoard(3,new TitleScreen("Feindheimischen Invasion",
-                                  "Drücke 'Leertaste' um das Spiel zu starten.",
+                                  "Drücke 'Enter' um das Spiel zu starten.",
                                   playGame));
 };
 
@@ -68,13 +68,13 @@ var playGame = function() {
 
 var winGame = function() {
   Game.setBoard(3,new TitleScreen("Gewonnen!",
-                                  "Drücke 'Leertaste' um nochmal zu spielen",
+                                  "Drücke 'Enter' um nochmal zu spielen",
                                   playGame));
 };
 
 var loseGame = function() {
   Game.setBoard(3,new TitleScreen("Verloren!",
-                                  "Drücke 'Leertaste' um nochmal zu spielen",
+                                  "Drücke 'Enter' um nochmal zu spielen",
                                   playGame));
 };
 
